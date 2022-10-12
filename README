@@ -1,0 +1,23 @@
+Main files:
+
+mainProg.m : compute all approximation levels without plotting
+plotFigs.m : plot all figures based on saved results
+
+Auxiliary files:
+
+generate_diagonal.m: generate a spcecial diagonal matrix
+saffpts.m  : generate Saff's equal-area-partitioned point      
+halton_pts.m: generate Halton's points on the sphere
+spherical_harmonics.m: generate the spherical harmonics on a given set X
+calculate_fourier.m: compute the Fourier coeffients
+Leg_Wend.m: compute the product of a P_el(t) phi(t)/ norm^2(P_el), where
+            P_el is the Legendre function and phi(t) is the Wendland based spherical basis function
+Wend_sbf0.m:   the spherical basis function based on Wendland function restricted to the sphere
+               phi(t) = (1-r)^2_+  with r = sqrt(2-2t) 
+Wend_sbf2.m
+Wend_sbf4.m
+generate_Phi.m
+
+g.txt: pre-computed g_{ell,k}
+noise.txt: pre-generated noise vector
+
