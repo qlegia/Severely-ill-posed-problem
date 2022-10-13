@@ -1,7 +1,9 @@
 Main files:
 
-mainProg.m : compute all approximation levels without plotting
+mainProg.m : compute all approximation levels without plotting using Saff's points
 plotFigs.m : plot all figures based on saved results
+mainProg_halton.m: compute all approximation levels without plotting using Halton'spoints
+plotFigs_halton.m: plot all figures based on saved results based on Halton's points
 
 Auxiliary files:
 
@@ -12,10 +14,12 @@ spherical_harmonics.m: generate the spherical harmonics on a given set X
 calculate_fourier.m: compute the Fourier coeffients
 Leg_Wend.m: compute the product of a P_el(t) phi(t)/ norm^2(P_el), where
             P_el is the Legendre function and phi(t) is the Wendland based spherical basis function
-Wend_sbf0.m:   the spherical basis function based on Wendland function restricted to the sphere
+Wend_sbf0.m:  the spherical basis function based on Wendland function restricted to the sphere
                phi(t) = (1-r)^2_+  with r = sqrt(2-2t) 
-Wend_sbf2.m
-Wend_sbf4.m
+Wend_sbf2.m:  the spherical basis function based on Wendland function restricted to the sphere
+               phi(t) = (1-r)^4_+ (4r+1) where r = sqrt(2-2*t)
+Wend_sbf4.m: the spherical basis function based on Wendland function restricted to the sphere
+              phi(t) = (1-r)^6_+ (35r^2+18r+3) where r = sqrt(2-2*t)
 generate_Phi.m
 
 g.txt: pre-computed g_{ell,k}
